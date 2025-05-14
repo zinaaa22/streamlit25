@@ -97,6 +97,4 @@ with tab3:
             st.success("✅ Correct!")
         else:
             st.error("❌ Try again.")
-with tab4
- st. caption("마라탕후루")
-      
+          
