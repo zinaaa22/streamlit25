@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.title("🍣 Group3 project")
-st.caption("마라탕")
+st.title("🍣 Jina's project")
+st.caption("Hello.")
 
-st.write("This should be a collaboratory work")
+st.write("How are you?")
 st.markdown("---")
