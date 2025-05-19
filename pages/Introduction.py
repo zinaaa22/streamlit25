@@ -1,17 +1,16 @@
 import streamlit as st
+from PIL import Image
 
-st.title("이미지 업로드 페이지")
+st.title("My practice page")
 
-tab1, tab2 = st.tabs(["📷 첫 번째 이미지", "🖼️ 두 번째 이미지"])
+tab1, tab2 = st.tabs(["📷 IMG_0112.jpeg", "🖼️Is it right?"])
 
 with tab1:
-    st.header("첫 번째 이미지를 업로드하세요")
-    uploaded_file1 = st.file_uploader("이미지 1 업로드", type=["jpg", "jpeg", "png"], key="img1")
-    if uploaded_file1 is not None:
-        st.image(uploaded_file1, caption="업로드된 첫 번째 이미지", use_column_width=True)
+    st.header("Hello")
+    image1 = Image.open("images/IMG_0112.jpeg")  # IMG_0112.jpeg
+    st.image(image1, caption="첫 번째 이미지", use_column_width=True)
 
 with tab2:
-    st.header("두 번째 이미지를 업로드하세요")
-    uploaded_file2 = st.file_uploader("이미지 2 업로드", type=["jpg", "jpeg", "png"], key="img2")
-    if uploaded_file2 is not None:
-        st.image(uploaded_file2, caption="업로드된 두 번째 이미지", use_column_width=True)
+    st.header("두 번째 이미지")
+    image2 = Image.open("images/IMG_0113.jpeg")  # 두 번째 이미지 경로
+    st.image(image2, caption="두 번째 이미지", use_column_width=True)
